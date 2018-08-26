@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: spremeni-barvo-teksta($primary-color);
     border-radius: 20px;
     @include easeOut;
   }
@@ -50,6 +50,19 @@
     justify-content: center;
     align-items: center;
   }
+  .nav-link {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: spremeni-barvo-teksta($primary-color);
+    padding: 1rem 0;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
   &-nav {
     margin: 0;
     padding: 0;
@@ -65,19 +78,6 @@
       transform: translate3d(600px, 0, 0);
       &.current > a {
         color: $secondary-color;
-      }
-      .nav-link {
-        display: inline-block;
-        font-weight: 300;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: #fff;
-        padding: 1rem 0;
-        @include easeOut;
-
-        &:hover {
-          color: $secondary-color;
-        }
       }
 
       &.show {

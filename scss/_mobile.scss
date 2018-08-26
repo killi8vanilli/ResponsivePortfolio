@@ -41,6 +41,15 @@
       }
     }
   }
+  .bio-info {
+    grid-template-areas:
+      "profileimg"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
 }
 
 @include mediaSm {

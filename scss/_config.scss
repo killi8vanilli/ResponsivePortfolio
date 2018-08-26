@@ -1,4 +1,4 @@
-$primary-color: rgb(68, 68, 68);
+$primary-color: rgb(97, 96, 96);
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -50,5 +50,12 @@ $background-opacity: 0.7;
 @mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
+  }
+}
+@function spremeni-barvo-teksta($barva) {
+  @if (lightness($barva) >40) {
+    @return black;
+  } @else {
+    @return white;
   }
 }
