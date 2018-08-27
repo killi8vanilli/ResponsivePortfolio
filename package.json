@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Portfolio project",
   "main": "index.js",
+  "homepage": "https://killi8vanilli.github.io/ResponsivePortfolio",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css"
+    "sass": "node-sass -w scss/ -o dist/css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "V",
   "license": "MIT"
